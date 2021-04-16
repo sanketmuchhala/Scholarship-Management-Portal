@@ -1,0 +1,61 @@
+<% include ../partials/header %>
+
+<!--NAVIGATION BAR FOR ADMIN-->
+<% include ../partials/adminNav %>
+
+<% include ../partials/alerts %>
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card">
+              <div class="card-header text-center">
+                <h4>Add Scholarship</h4>
+              </div>
+                <div class="card-block">
+                  <form class="p-3" action="/admin/books/add" method="POST">
+                      
+                    <div class="form-group">
+                      <label class="form-control-label">Scholarship Name</label>
+                      <input type="text" name="book[title]" placeholder="Scholarship Name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="form-control-label">Scholarship Provider</label>
+                      <input type="text" name="book[author]" placeholder="Scholarship Provider" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="form-control-label">Scholarship ID</label>
+                      <input type="text" name="book[ISBN]" placeholder="Scholarship ID" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="form-control-label">Category</label>
+                      <input type="text" name="book[category]" placeholder="Scholarship Category" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="form-control-label">Availability</label>
+                      <input type="Number" name="book[stock]" placeholder="Availability" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="form-control-label">Scholarship Description</label>
+                      <textarea name="book[description]" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Add Scholarship</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+<script>
+  CKEDITOR.replace('book[description]');
+</script>
+
+<% include ../partials/footer %>
