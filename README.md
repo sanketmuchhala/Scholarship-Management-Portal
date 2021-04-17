@@ -6,7 +6,9 @@ Install Dependencies for this project
 
 npm install passport passport-local passport-local-mongoose body-parser connect-flash ejs express express-santizer express-session method-override mongoose multer sharp uuid --save
 
+
 npm install nodemon faker --save-dev
+
 
 Run the application
 
@@ -16,9 +18,12 @@ commands
 
 npm install 
 
+
 npm run dev
 
+
 npm start 
+
 
 the app will be hosted at 
 http://localhost:3000/
