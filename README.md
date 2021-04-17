@@ -10,19 +10,24 @@ npm install passport passport-local passport-local-mongoose body-parser connect-
 npm install nodemon faker --save-dev
 
 
+
 Run the application
 
 make desired changes in .env file in accordance to your machine and your software versions.
 
 commands
 
+
 npm install 
+
 
 
 npm run dev
 
 
+
 npm start 
+
 
 
 the app will be hosted at 
