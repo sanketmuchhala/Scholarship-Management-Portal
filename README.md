@@ -1,6 +1,6 @@
 # Scholarship-Management-Portal
 
-A simple online scholarship management system built with MongodDB, Express.js and Node.js. Click here to see the application
+A simple online scholarship management system built with MongodDB, Express.js and Node.js.
 
 Install Dependencies for this project 
 
